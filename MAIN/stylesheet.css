@@ -9,7 +9,7 @@
 p {
   font-size: 25px;
   font-family: 'Fira Code', monospace;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-family: var(--font-audiowide);
   letter-spacing: 2px;
@@ -19,7 +19,7 @@ p {
 
 p span {
   font-size: 25px;
-  color: #A0C55F; 
+  color: #A0C55F;
 }
 
 
@@ -37,6 +37,8 @@ p span {
   overflow: hidden;
   text-align: left;
   font-size: 30px;
+  padding-top: 0;
+  padding-bottom: 26px;
 }
 
 
@@ -93,8 +95,15 @@ section {
 }
 
 .proyectos-contenedor {
-  padding-top: 60px;
+  padding-top: 56px;
   margin-bottom: 40px;
+}
+
+.proyectos-contenedor p {
+  padding: 10px;
+  margin: 0;
+  text-shadow: 2px 3.5px 0 black;
+
 }
 
 .overlay {
@@ -129,12 +138,104 @@ section {
   display: flex;
 }
 
-.overlay i {
-  color: black;
-  font-size: 60px;
-  margin: 10px;
+
+button {
+  border-radius: 12px;
+  font-size: 20px;
+  width: 120px;
+  height: 50px;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 4px;
+  color: white;
+  border: none;
+  text-shadow: 2px 3.5px 0 black;
 }
 
+#hang1 button {
+  background-color: #7AB317;
+}
+
+#cross1 button {
+  background-color: #2A044A;
+}
+
+#WS1 button {
+  background-color: #5C65C0;
+}
+
+#Mem1 button {
+  background-color: #AD2BAD;
+}
+
+#hang1 {
+  background-color: #7AB317;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 300px;
+  margin-right: 30px;
+}
+
+.boxHangman {
+  background-color: #B8D47B;
+  width: 247px;
+  height: 283px;
+  border-radius: 20px;
+}
+
+#cross1 {
+  background-color: #2A044A;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 300px;
+  margin-right: 30px;
+
+}
+
+.boxCross {
+  width: 247px;
+  height: 283px;
+  border-radius: 20px;
+}
+
+#WS1 {
+  background-color: #5C65C0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 300px;
+  margin-right: 30px;
+
+}
+
+.WSbox {
+  background-color: #6F95FF;
+  width: 247px;
+  height: 283px;
+  border-radius: 20px;
+}
+
+#Mem1 {
+  background-color: #AD2BAD;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 300px;
+  margin-right: 30px;
+
+}
+
+.membox {
+  background-color: #C575C5;
+  width: 247px;
+  height: 283px;
+  border-radius: 20px;
+}
 
 
 
