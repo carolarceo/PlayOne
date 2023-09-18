@@ -1,0 +1,187 @@
+/* Barra de navegacion */
+
+.navbar {
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: #243a69;
+}
+
+p {
+  font-size: 25px;
+  font-family: 'Fira Code', monospace;
+  color: rgb(255, 255, 255); 
+  font-weight: bold;
+  font-family: var(--font-audiowide);
+  letter-spacing: 2px;
+
+
+}
+
+p span {
+  font-size: 25px;
+  color: #A0C55F; 
+}
+
+
+
+/* Estilos generales */
+
+
+#cuerpe {
+  position: relative;
+  background: linear-gradient(180deg, #243a69 35.94%, #6d6190);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0px solid #000;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: 30px;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.seccion-titulo {
+  font-size: 90px;
+  padding: 15px 0;
+  font-family: var(--font-audiowide);
+  color: #fff;
+
+}
+
+.seccion-descripcion {
+  font-size: 1.1rem;
+  color: #584e4e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+
+
+
+
+
+/* Proyectos */
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+
+
+:root {
+  /* fonts */
+  --font-audiowide: Audiowide;
+
+  /* Colors */
+  --color-white: #fff;
+
+  /* Border radiuses */
+  --br-6xl: 25px;
+}
+
+
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
